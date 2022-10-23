@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* background-color: red; */
+  display: flex;
+  width: 100vw;
+}
+
+.firstChild,
+.secondChild {
+  width: 50vw;
+}
+
+.firstChild {
+  margin: 10px;
+  /* background-color: aqua; */
+}
+
+h1 {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+#lists{
+  cursor: pointer;
+  position:static;
+  padding: 12px ;
+  font-size: 18px;
+ 
+   
+
+}
+
+#button
+{
+  padding: 9px;
+  width: 25%;
+  background: #d9d9d9;
+  color: rgb(0, 0, 0);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+#button:hover{
+  background-color: rgb(29, 228, 45);
+}
+
+.secondChildren {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+/* Media queries */
+
+@media (min-width: 400px) and (max-width: 699px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .firstChild {
+    margin: 10px;
+    /* background-color: aqua; */
+    width: 100vw;
+  }
+
+  .secondContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: spa;
+  }
+
+  .secondChildren {
+    width: 100vw;
+  }
+}
+
+.secondContainer {
+  display: flex;
+}
+
+.added {
+  background-color: aqua;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding: auto;
+position:static;
+width:100%;
+
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  font-family: 'Trebuchet MS';
+}
